@@ -73,8 +73,8 @@ void loop() {
       BTAddress addr = pResults->getDevice(i)->getAddress();
       String name = pResults->getDevice(i)->getName().c_str();
       int rssi = pResults->getDevice(i)->getRSSI();
-      String str1="Galaxy M13";
-      String str2="JBL TUNE215TWS";
+      String str1="Device name";
+      String str2="Device name";
       if(str1==name || str2==name )
       {
         Serial.print("Device Name: "); Serial.println(name.length() > 0 ? name : "Unknown");
